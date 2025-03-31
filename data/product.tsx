@@ -1,3 +1,4 @@
+import { CartItemType } from "@/components/order/cartItem";
 import type { ProductItem, } from "@/components/product/productItem";
 
 const products: ProductItem[] = [
@@ -228,5 +229,58 @@ export const categoryList = [
     ],
   }
 ];
+export const carts: CartItemType[] = [
+  {
+      selected: true,
+      id: 1,
+      src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
+      name: 'Dây Bus cái XH2.54mm dài 20cm',
+      decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
+      price: 15000,
+      amount: 3,
+      total: 10,
+  },
+  {
+      selected: true,
+      id: 2,
+      src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
+      name: 'Dây Bus cái XH2.54mm dài 20cm',
+      decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
+      price: 15000,
+      amount: 3,
+      total: 15,
+  },
+  {
+      selected: true,
+      id: 3,
+      src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
+      name: 'Dây Bus cái XH2.54mm dài 20cm',
+      decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
+      price: 15000,
+      amount: 3,
+      total: 8,
+  },
+  {
+      selected: true,
+      id: 4,
+      src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
+      name: 'Dây Bus cái XH2.54mm dài 20cm',
+      decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
+      price: 15000,
+      amount: 3,
+      total: 6,
+  },
+  {
+      selected: true,
+      id: 5,
+      src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
+      name: 'Dây Bus cái XH2.54mm dài 20cm',
+      decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
+      price: 15000,
+      amount: 3,
+      total: 50,
+  }
+]
+
 
 export default products;

@@ -20,9 +20,7 @@ export default function OrderLayout({
         {
             title: "Giỏ hàng",
         },
-        {
-            title: "Đặt hàng",
-        },
+       
         {
             title: "Thanh toán",
         },

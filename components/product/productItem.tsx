@@ -82,7 +82,7 @@ const ProductListItem = React.forwardRef<HTMLDivElement, ProductListItemProps>(
             <Button
               fullWidth
               className="font-medium"
-              color="primary"
+              color="secondary"
               radius="lg"
               variant={"flat"}
             >

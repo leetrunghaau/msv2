@@ -20,6 +20,7 @@ const ProductList = React.forwardRef<HTMLInputElement, ProductListProps>(({ titl
             <div className={cn("flex items-center justify-between px-6 py-4")}>
                 <h2 className={cn("text-2xl font-semibold text-default-800")}>{title}</h2>
                 <Link
+                color="secondary"
                     isExternal
                     showAnchorIcon
                     anchorIcon={<Icon icon="solar:double-alt-arrow-right-line-duotone" width={20} />}
