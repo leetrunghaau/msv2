@@ -38,10 +38,10 @@ export default function LoginPage() {
                 <div className="flex flex-col gap-3">
                     <div className="flex w-full gap-3">
                         <Input placeholder="Mã khuyến mãi" />
-                        <Button variant="bordered" color="primary">Áp dụng</Button>
+                        <Button variant="bordered" color="secondary">Áp dụng</Button>
                     </div>
                     <Link href="/order/checkOut" className="w-full ">
-                        <Button className="w-full" color="primary">Đặt hàng</Button>
+                        <Button className="w-full" color="secondary">Đặt hàng</Button>
                     </Link>
                 </div>
             </CardFooter>

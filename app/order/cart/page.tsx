@@ -48,7 +48,7 @@ export default function CartPage() {
                     <CardBody>
                         <div className="flex flex-col gap-2">
                             <Divider />
-                            <h2 className="text-center">Địa chỉ giao hàng</h2>
+                            <h2 className="text-center">Chọn địa điểm giao hàng</h2>
                             <Address onAddressChange={(newAddress) => {
                                 setAddress(newAddress)
 

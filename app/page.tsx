@@ -15,7 +15,7 @@ export default function Home() {
       <ProductList title="Sản phẩm mới" data={products} />
       <ProductList title="Sản phẩm phổ biến" data={products} />
       <ProductList title="Sản phẩm bán chạy" data={products} />
-      <ContentList title="Bài viết" data={["abc", "abc", "abc", "abc", "abc", "abc","abc", "abc", "abc", "abc", "abc", "abc",]} />
+      {/* <ContentList title="Bài viết" data={["abc", "abc", "abc", "abc", "abc", "abc","abc", "abc", "abc", "abc", "abc", "abc",]} /> */}
     </div>
 
   )

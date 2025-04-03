@@ -10,7 +10,7 @@ export const Footer = () => {
                 title="heroui.com homepage"
               >
                 <span className="text-default-600">Powered by</span>
-                <p className="text-primary">Math Solver VN</p>
+                <p className="text-secondary">Math Solver VN</p>
               </Link>
             </footer>
     );

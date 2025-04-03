@@ -27,11 +27,11 @@ const MUser: React.FC<MUserProps> = ({ fullInfo = false }) => {  // Mặc địn
       <DropdownMenu aria-label="User Actions" variant="flat">
         <DropdownItem key="profile" className="h-14 gap-2">
           <p className="font-bold">Đăng nhập bởi</p>
-          <p className="font-bold">@tonyreichert</p>
+          <p className="font-bold">@leetrunghaau</p>
         </DropdownItem>
-        <DropdownItem key="settings">Đơn hàn của tôi</DropdownItem>
-        <DropdownItem key="team_settings">Thông tin tài khoản</DropdownItem>
-        <DropdownItem key="system">Thông báo</DropdownItem>
+        <DropdownItem href='/user' key="settings">Đơn hàn của tôi</DropdownItem>
+        <DropdownItem href='/user/info' key="team_settings">Thông tin tài khoản</DropdownItem>
+        {/* <DropdownItem key="system">Thông báo</DropdownItem> */}
         <DropdownItem key="logout" color="danger">
           Đăng xuất
         </DropdownItem>

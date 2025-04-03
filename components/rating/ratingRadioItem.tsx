@@ -22,7 +22,7 @@ const RatingRadioItem = React.forwardRef<HTMLInputElement, RadioProps>((props, r
     isSelfSelected || Number(groupContext.groupState.selectedValue) >= Number(props.value);
   const isReadOnly = groupContext.groupState.isReadOnly;
   const size = props.size || groupContext.size || "md";
-  const color = props.color || groupContext.color || "primary";
+  const color = props.color || groupContext.color || "secondary";
 
   const starWidth = React.useMemo(() => {
     switch (size) {

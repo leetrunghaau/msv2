@@ -50,18 +50,18 @@ export default function ProductPage() {
             </Breadcrumbs>
             <div className="flex justify-around gap-4 ">
                 <div className="flex flex-col gap-4 min-w-60" >
-                    <h1 className="text-xl text-center font-semibold text-primary-700">Bộ lọc</h1>
+                    <h1 className="text-xl text-center font-semibold text-secondary-700">Bộ lọc</h1>
                     <Divider />
                     <Slider
                         classNames={{
                             base: "max-w-md",
-                            filler: "bg-gradient-to-r from-primary-500 to-secondary-400",
+                            filler: "bg-gradient-to-r from-secondary-500 to-secondary-400",
                             labelWrapper: "mb-2",
                             label: "font-medium text-default-700 text-medium",
                             value: "font-medium text-default-500 text-small",
                             thumb: [
                                 "transition-size",
-                                "bg-gradient-to-r from-secondary-400 to-primary-500",
+                                "bg-gradient-to-r from-secondary-400 to-secondary-500",
                                 "data-[dragging=true]:shadow-lg data-[dragging=true]:shadow-black/20",
                                 "data-[dragging=true]:w-7 data-[dragging=true]:h-7 data-[dragging=true]:after:h-6 data-[dragging=true]:after:w-6",
                             ],
@@ -82,11 +82,11 @@ export default function ProductPage() {
                             placement: "bottom",
                             classNames: {
                                 base: [
-                                    "before:bg-gradient-to-r before:from-secondary-400 before:to-primary-500",
+                                    "before:bg-gradient-to-r before:from-secondary-400 before:to-secondary-500",
                                 ],
                                 content: [
                                     "py-2 shadow-xl",
-                                    "text-white bg-gradient-to-r from-secondary-400 to-primary-500",
+                                    "text-white bg-gradient-to-r from-secondary-400 to-secondary-500",
                                 ],
                             },
                         }}
@@ -134,11 +134,11 @@ export default function ProductPage() {
                     {/* <Divider /> */}
                     <Button
                         size="lg"
-                        color="primary"
+                        color="secondary"
                         variant="bordered"
                         endContent={<Icon icon="tabler:zoom-check" width={20} />}
                     >Áp dụng</Button>
-                    <h1 className="text-xl text-center font-semibold text-primary-700">Danh mục</h1>
+                    <h1 className="text-xl text-center font-semibold text-secondary-700 mt-10">Danh mục</h1>
                     {renderCategory(categoryList)}
                 </div>
                 <div className="flex flex-col gap-4 w-full max-w-full items-center">
@@ -148,6 +148,7 @@ export default function ProductPage() {
                         ))}
                     </div>
                     <Pagination
+                        color="secondary"
                         showShadow
                         initialPage={1}
                         total={20}

@@ -1,3 +1,5 @@
+import { ProductDetailType } from "@/app/product/[productId]/page";
+import { OrderItem } from "@/app/user/page";
 import { CartItemType } from "@/components/order/cartItem";
 import type { ProductItem, } from "@/components/product/productItem";
 
@@ -5,7 +7,7 @@ const products: ProductItem[] = [
   {
     id: "1",
     name: "ESP32-S3 ",
-    href: "#",
+    href: "kajgh",
     price: 150000,
     description: "ESP32-S3-WROOM-1-N4 Module WiFi Bluetooth 4MB Flash 2.4GHz.ESP32-S3-WROOM-1-N4 Module WiFi Bluetooth 4MB Flash 2.4GHz.",
     imageSrc: "https://www.thegioiic.com/upload/large/52635.jpg",
@@ -13,7 +15,7 @@ const products: ProductItem[] = [
   {
     id: "2",
     name: "ESP32-S3",
-    href: "#",
+    href: "aokgh",
     price: 49.99,
     description: "ESP32-S3-WROOM-1-N4 Module WiFi Bluetooth 4MB Flash 2.4GHz.",
     imageSrc: "https://www.thegioiic.com/upload/large/50108.jpg",
@@ -21,7 +23,7 @@ const products: ProductItem[] = [
   {
     id: "3",
     name: "ESP32-S3",
-    href: "#",
+    href: "jkashgd",
     price: 49.99,
     description: "ESP32-S3-WROOM-1-N4 Module WiFi Bluetooth 4MB Flash 2.4GHz.",
     imageSrc: "https://www.thegioiic.com/upload/large/52635.jpg",
@@ -29,7 +31,7 @@ const products: ProductItem[] = [
   {
     id: "4",
     name: "ESP32-S3",
-    href: "#",
+    href: "ádlkjfh",
     price: 49.99,
     description: "ESP32-S3-WROOM-1-N4 Module WiFi Bluetooth 4MB Flash 2.4GHz.",
     imageSrc: "https://www.thegioiic.com/upload/large/52635.jpg",
@@ -37,7 +39,7 @@ const products: ProductItem[] = [
   {
     id: "5",
     name: "ESP32-S3",
-    href: "#",
+    href: "ádklflh",
     price: 49.99,
     description: "ESP32-S3-WROOM-1-N4 Module WiFi Bluetooth 4MB Flash 2.4GHz.",
     imageSrc: "https://www.thegioiic.com/upload/large/52635.jpg",
@@ -45,7 +47,7 @@ const products: ProductItem[] = [
   {
     id: "6",
     name: "ESP32-S3",
-    href: "#",
+    href: "aksdjfg",
     price: 49.99,
     description: "ESP32-S3-WROOM-1-N4 Module WiFi Bluetooth 4MB Flash 2.4GHz.",
     imageSrc: "https://www.thegioiic.com/upload/large/52635.jpg",
@@ -231,56 +233,208 @@ export const categoryList = [
 ];
 export const carts: CartItemType[] = [
   {
-      selected: true,
-      id: 1,
-      src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
-      name: 'Dây Bus cái XH2.54mm dài 20cm',
-      decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
-      price: 15000,
-      amount: 3,
-      total: 10,
+    selected: true,
+    id: 1,
+    src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
+    name: 'Dây Bus cái XH2.54mm dài 20cm',
+    decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
+    price: 15000,
+    amount: 3,
+    total: 10,
   },
   {
-      selected: true,
-      id: 2,
-      src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
-      name: 'Dây Bus cái XH2.54mm dài 20cm',
-      decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
-      price: 15000,
-      amount: 3,
-      total: 15,
+    selected: true,
+    id: 2,
+    src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
+    name: 'Dây Bus cái XH2.54mm dài 20cm',
+    decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
+    price: 15000,
+    amount: 3,
+    total: 15,
   },
   {
-      selected: true,
-      id: 3,
-      src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
-      name: 'Dây Bus cái XH2.54mm dài 20cm',
-      decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
-      price: 15000,
-      amount: 3,
-      total: 8,
+    selected: true,
+    id: 3,
+    src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
+    name: 'Dây Bus cái XH2.54mm dài 20cm',
+    decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
+    price: 15000,
+    amount: 3,
+    total: 8,
   },
   {
-      selected: true,
-      id: 4,
-      src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
-      name: 'Dây Bus cái XH2.54mm dài 20cm',
-      decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
-      price: 15000,
-      amount: 3,
-      total: 6,
+    selected: true,
+    id: 4,
+    src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
+    name: 'Dây Bus cái XH2.54mm dài 20cm',
+    decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
+    price: 15000,
+    amount: 3,
+    total: 6,
   },
   {
-      selected: true,
-      id: 5,
-      src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
-      name: 'Dây Bus cái XH2.54mm dài 20cm',
-      decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
-      price: 15000,
-      amount: 3,
-      total: 50,
+    selected: true,
+    id: 5,
+    src: "https://nshopvn.com/wp-content/uploads/2022/05/day-bus-cai-xh2-54mm-dai-20cm-1-300x300.jpg",
+    name: 'Dây Bus cái XH2.54mm dài 20cm',
+    decripsition: "Kit RF thu phát wifi bluetooth esp32 cổng nạp Micro có bộ xử lý mạnh mẽ, Hổ trợ các chế độ: AP, STA, và AP+STA.",
+    price: 15000,
+    amount: 3,
+    total: 50,
   }
 ]
+
+export const productDetail: ProductDetailType = {
+  id: 101,
+  name: "ESP 32 s2 c3 ",
+  price: 135000,
+  total: 10,
+  code: "XYZ123",
+  branch: "ABC Electronics",
+  description: "Dây Bus cái XH2.54mm dài 20cm, sử dụng cho các bo mạch điện tử và các ứng dụng giao tiếp tín hiệu.",
+  src: [
+    "https://www.thegioiic.com/upload/large/51847.jpg",
+    "https://www.thegioiic.com/upload/large/51848.jpg",
+    "https://www.thegioiic.com/upload/large/51849.jpg",
+    "https://www.thegioiic.com/upload/large/51850.jpg",
+    "https://www.thegioiic.com/upload/large/51848.jpg",
+    "https://www.thegioiic.com/upload/large/51849.jpg",
+    "https://www.thegioiic.com/upload/large/51850.jpg"
+
+  ],
+  detail: {
+    describe: [
+      {
+        index: 0,
+        content: "Kit phát triển WiFi  Bluetooth ESP32-C3 Super Mini là một phiên bản nhỏ gọn nhưng mạnh mẽ của dòng vi điều khiển ESP32-C3. Được thiết kế đặc biệt cho các ứng dụng Internet of Things (IoT), sản phẩm này cung cấp khả năng kết nối không dây ổn định và hiệu quả, phù hợp cho nhiều dự án sáng tạo và phát triển sản phẩm."
+      },
+      {
+        index: 1,
+        content: "Với Wi-Fi 802.11 b/g/n và Bluetooth Low Energy (BLE), ESP32-C3 Super Mini cho phép thiết lập kết nối không dây nhanh chóng và linh hoạt. Việc hỗ trợ nhiều giao thức kết nối giúp sản phẩm dễ dàng tích hợp vào các thiết bị thông minh và hệ thống tự động hóa trong nhà, cũng như các ứng dụng yêu cầu truyền tải dữ liệu với mức tiêu thụ năng lượng thấp."
+      },
+      {
+        index: 2,
+        content: "Bộ xử lý RISC-V lõi đơn của ESP32-C3 Super Mini mang lại hiệu suất mạnh mẽ trong khi vẫn tối ưu hóa việc sử dụng năng lượng. Với khả năng tiết kiệm năng lượng cao và kích thước nhỏ gọn, kit phát triển này là lựa chọn lý tưởng cho các thiết bị di động, cảm biến từ xa, và các giải pháp IoT cần tối ưu hóa không gian và năng lượng.."
+      }
+
+    ],
+    parameter: [
+      { key: "model", value: "ESP32-C3 -18" },
+      { key: "cpu", value: "RISC-V 32-bit đơn lõi" },
+      { key: "clockSpeed", value: "160 MHz" },
+      { key: "ultraLowPowerProcessing", value: "Không có" },
+      { key: "sram", value: "400 KB" }
+    ]
+  }
+};
+export const orders: OrderItem[] = [
+  {
+    id: 1,
+    code: "ORD001",
+    date: new Date("2025-04-01T10:00:00Z"),
+    total: 250000,
+    state: "accept"
+  },
+  {
+    id: 2,
+    code: "ORD002",
+    date: new Date("2025-04-02T14:30:00Z"),
+    total: 350000,
+    state: "transferred"
+  },
+  {
+    id: 3,
+    code: "ORD003",
+    date: new Date("2025-04-03T09:00:00Z"),
+    total: 120000,
+    state: "delivery"
+  },
+  {
+    id: 4,
+    code: "ORD004",
+    date: new Date("2025-04-04T11:45:00Z"),
+    total: 450000,
+    state: "delivered"
+  },
+  {
+    id: 5,
+    code: "ORD005",
+    date: new Date("2025-04-05T16:30:00Z"),
+    total: 300000,
+    state: "cancel"
+  },
+  {
+    id: 6,
+    code: "ORD006",
+    date: new Date("2025-04-06T08:15:00Z"),
+    total: 500000,
+    state: "accept"
+  },
+  {
+    id: 7,
+    code: "ORD007",
+    date: new Date("2025-04-07T13:00:00Z"),
+    total: 200000,
+    state: "transferred"
+  },
+  {
+    id: 8,
+    code: "ORD008",
+    date: new Date("2025-04-08T09:45:00Z"),
+    total: 150000,
+    state: "delivery"
+  },
+  {
+    id: 9,
+    code: "ORD009",
+    date: new Date("2025-04-09T10:30:00Z"),
+    total: 300000,
+    state: "delivered"
+  },
+  {
+    id: 10,
+    code: "ORD010",
+    date: new Date("2025-04-10T14:00:00Z"),
+    total: 250000,
+    state: "cancel"
+  },
+  {
+    id: 11,
+    code: "ORD011",
+    date: new Date("2025-04-11T16:00:00Z"),
+    total: 320000,
+    state: "accept"
+  },
+  {
+    id: 12,
+    code: "ORD012",
+    date: new Date("2025-04-12T10:30:00Z"),
+    total: 420000,
+    state: "transferred"
+  },
+  {
+    id: 13,
+    code: "ORD013",
+    date: new Date("2025-04-13T09:00:00Z"),
+    total: 180000,
+    state: "delivery"
+  },
+  {
+    id: 14,
+    code: "ORD014",
+    date: new Date("2025-04-14T12:00:00Z"),
+    total: 600000,
+    state: "delivered"
+  },
+  {
+    id: 15,
+    code: "ORD015",
+    date: new Date("2025-04-15T17:15:00Z"),
+    total: 350000,
+    state: "cancel"
+  }
+];
+
 
 
 export default products;

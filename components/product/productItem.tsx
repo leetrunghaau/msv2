@@ -8,6 +8,7 @@ import { Button } from "@heroui/button";
 import { Image } from "@heroui/image";
 import { cn } from "@heroui/theme";
 import { formatPrice } from "@/helper/uilt";
+import { Link } from "@heroui/link";
 
 
 export type ProductItem = {
@@ -31,6 +32,7 @@ const ProductListItem = React.forwardRef<HTMLDivElement, ProductListItemProps>(
       baner,
       description,
       imageSrc,
+      href,
       className,
       ...props
     },
@@ -52,19 +54,24 @@ const ProductListItem = React.forwardRef<HTMLDivElement, ProductListItemProps>(
             NEW
           </span>
         ) : null}
-       
+
 
         {/* --------------------------------- */}
-        <Image
-          // radius=""
-          isZoomed
-          // removeWrapper
-          alt={name}
-          className={cn(
-            "z-0 h-full max-h-full w-full overflow-visible  ",
-          )}
-          src={imageSrc}
-        />
+        <Link href={`/product/${href}`}>
+          <Image
+            // radius=""
+            isZoomed
+            // removeWrapper
+
+            alt={name}
+            className={cn(
+              "z-0 h-full max-h-full w-full overflow-visible cursor-pointer ",
+            )}
+            src={imageSrc}
+
+          />
+        </Link>;
+
         {/* ---------------------------- */}
         <div className="flex flex-col gap-3 px-1 h-full justify-between">
           <div

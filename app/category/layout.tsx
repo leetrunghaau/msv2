@@ -100,8 +100,8 @@ export default function CategoryLayout({
         <div
           key={category.id}
           className={cn(
-            "border-primary rounded-full px-3 py-0.5",
-            "text-default-800 text-sm hover:bg-primary-200 text-center",
+            "border-secondary rounded-full px-3 py-0.5",
+            "text-default-800 text-sm hover:bg-secondary-200 text-center",
             "transition-colors duration-300 ease-in-out cursor-pointer",
             false ? "border-2" : "border-0"
           )}
@@ -144,8 +144,8 @@ export default function CategoryLayout({
               <div
                 key={1}
                 className={cn(
-                  "border-primary rounded-full px-3 py-0.5",
-                  "text-default-800 text-sm hover:bg-primary-200 text-center",
+                  "border-secondary rounded-full px-3 py-0.5",
+                  "text-default-800 text-sm hover:bg-secondary-200 text-center",
                   "transition-colors duration-300 ease-in-out cursor-pointer",
                   false ? "border-2" : "border-0"
                 )}
